@@ -1,15 +1,16 @@
 @import "compass/css3";
 @import url('https://fonts.googleapis.com/css?family=Cabin Sketch');
 @import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Nosifer');
 
 #siteTitle {
 color: white;
-font-family: "Cabin Sketch";
-font-size: 300%;
+font-family: "Nosifer";
+font-size: 400%;
 border: transparent;
-padding: 70px;
+padding: 30px;
 
-background-color: rgb(255,0,0);
+background-color: Crimson;
 
 display: flex;
 justify-content: center;
@@ -19,7 +20,7 @@ justify-content: center;
 .menuBar {
 list-style: none;
 margin: 0;
-background-color: rgb(255,0,0);
+background-color: Crimson;
 
 display: flex;
 justify-content: flex-end;
@@ -35,6 +36,10 @@ padding: 30px;
 }
 
 
+a {
+text-decoration: none; 
+}
+
 .content {
 display: flex;
 flex-flow: row wrap;
@@ -44,15 +49,28 @@ align-content: stretch;
 
 
 p {
-font-family: "Cabin Sketch";
-font-size: 200%;
+
+
 border: transparent;
-padding: 10%;
+padding: 25%;
 text-align: center;
 }
 
+.normalText {
+color: white;
+font-family: "Cabin Sketch";
+font-size: 200%;
+}
+
+
+.bloodyText {
+color: red;
+font-family: "Nosifer";
+font-size: 200%;
+}
+
 .block {
-width: 33%;
+width: 33.3%;
 
 }
 
@@ -69,21 +87,33 @@ flex-flow: row wrap;
 
 
 .color1 {
-background-color: coral;
+background-color: red;
 }
 
 .color2 {
-background-color: cadetBlue;
+background-color: DimGrey;
 }
 
 .color3 {
-background-color: greenYellow;
+background-color: white;
 }
 
 .color4 {
-background-color: orange;
+background-color: DimGrey;
 }
 
 .color5 {
-background-color: PaleVioletRed;
+background-color: LightGrey;
+}
+
+footer {
+display: flex;
+justify-content: flex-start;
+
+background-color: DarkGrey;
+
+color: black;
+font-family: "Cabin";
+padding: 2%;
+
 }
