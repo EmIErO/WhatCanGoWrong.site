@@ -3,13 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 @import url('https://fonts.googleapis.com/css?family=Nosifer');
 
+
+
 #siteTitle {
 color: white;
 font-family: "Nosifer";
 font-size: 400%;
 border: transparent;
 padding: 30px;
-
 background-color: Crimson;
 
 display: flex;
@@ -40,24 +41,32 @@ a {
 text-decoration: none; 
 }
 
+
 .content {
 display: flex;
 flex-flow: row wrap;
 justify-content: flex-start;
-align-content: stretch;
+align-content: flex-start;
 }
 
 
 p {
-
-
+flex: 1;
 border: transparent;
 padding: 25%;
 text-align: center;
 }
 
+
 .normalText {
 color: white;
+font-family: "Cabin Sketch";
+font-size: 200%;
+}
+
+
+.normalDarkText {
+color: black;
 font-family: "Cabin Sketch";
 font-size: 200%;
 }
@@ -71,16 +80,27 @@ font-size: 200%;
 
 .block {
 width: 33.3%;
-
 }
+
 
 .block1 {
 flex: 1;
+display: flex;
+flex-flow: column wrap;
+justify-content: space-evenly;
+height: 700px;
 }
+
+
+.inBlock1 {
+max-width: 50%;
+max-height: 50%;
+align-self: center;
+}
+
 
 .block2 {
 flex: 2;
-
 display: flex;
 flex-flow: row wrap;
 }
@@ -99,21 +119,44 @@ background-color: white;
 }
 
 .color4 {
-background-color: DimGrey;
-}
-
-.color5 {
 background-color: LightGrey;
 }
+
 
 footer {
 display: flex;
 justify-content: flex-start;
-
 background-color: DarkGrey;
 
 color: black;
 font-family: "Cabin";
 padding: 2%;
-
 }
+
+
+@media all and (min-width: 600px) {
+  .block1 { flex: 1 auto; }
+  .block2 { flex: 1 auto; }
+}
+
+
+/* theTask subpage - elements' layout */
+
+
+.theTaskContent {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+}
+
+.theTaskImg {
+flex: 2;
+align-self: center;
+}
+
+.wednesdayImg {
+flex: 1;
+align-self: center;
+padding: 10%;
+}
+
