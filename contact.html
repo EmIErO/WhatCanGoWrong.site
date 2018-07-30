@@ -10,20 +10,22 @@
 <header id="siteTitle"><strong>WHAT CAN GO  WRONG</strong>?</header>
 <header>
 <ul class="menuBar">
-   <a href="index.html"><li class="menuOpt">HOME</li></a>
+   <li class="menuOpt"><a href="index.html">HOME</a></li>
    <li class="menuOpt">ABOUT</li>
    <li class="menuOpt">SOMETHING</li>
-   <li class="menuOpt">CONTACT</li>	
+   <li class="menuOpt"><a href="contact.html">CONTACT</a></li>	
 </ul>
 </header>
 
 <div class="tcontent color3">
   <div class="contactSheet normalDarkText">
   <form action="/action_page.php" method="post">
-  Name:<br>
+  <label>Name:</label><br>
   <input type="text" name="Name" value="Enter your first name"><br>
-  Email:<br>
-  <input type="text" name="Email" value="Give your email"><br><br>
+  <label>Email:</label><br>
+  <input type="text" name="Email" placeholder="Give your email"><br>
+  <label>Message</label><br>
+  <textarea class="contact__message" name="contactMessage"></textarea>
   <input type="submit" value="Submit">
   </form>
   </div>
