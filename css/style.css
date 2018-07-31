@@ -20,7 +20,6 @@ justify-content: center;
 
 .menuBar {
 list-style: none;
-color: white;
 margin: 0;
 background-color: Crimson;
 
@@ -39,7 +38,8 @@ padding: 30px;
 
 
 a {
-text-decoration: none; 
+text-decoration: none;
+color: white; 
 }
 
 
@@ -50,6 +50,21 @@ justify-content: flex-start;
 align-content: flex-start;
 }
 
+
+.contactContent {
+display:flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+height: 500px;
+}
+
+
+.theTaskContent {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+}
 
 p {
 flex: 1;
@@ -100,6 +115,16 @@ align-self: center;
 }
 
 
+.inContact {
+width: 100%;
+}
+
+
+.contact__message {
+padding: 25% 50%;
+}
+
+
 .block2 {
 flex: 2;
 display: flex;
@@ -144,11 +169,6 @@ padding: 2%;
 /* theTask subpage - elements' layout */
 
 
-.theTaskContent {
-display: flex;
-flex-flow: row wrap;
-justify-content: space-evenly;
-}
 
 .theTaskImg {
 flex: 2;

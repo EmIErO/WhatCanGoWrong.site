@@ -17,18 +17,21 @@
 </ul>
 </header>
 
-<div class="tcontent color3">
-  <div class="contactSheet normalDarkText">
-  <form action="/action_page.php" method="post">
+<div class="contactContent color3 normalDarkText">
+
+  <form name="sendMessage" action="/action_page.php" method="post">
   <label>Name:</label><br>
-  <input type="text" name="Name" value="Enter your first name"><br>
+  <input type="text" name="Name" placeholder="Enter your first name" required><br>
   <label>Email:</label><br>
-  <input type="text" name="Email" placeholder="Give your email"><br>
+  <input type="text" name="Email" placeholder="Give your email" required><br>
   <label>Message</label><br>
-  <textarea class="contact__message" name="contactMessage"></textarea>
-  <input type="submit" value="Submit">
+  <textarea class="contact__message" name="contactMessage" required></textarea>
+  <input class="inContact" type="submit" value="Submit">
+
+  <script src="myScript.js"></script>
+
   </form>
-  </div>
+  
 </div>
 
 <footer>So something should show up :)</footer>
